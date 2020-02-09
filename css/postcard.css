@@ -12,7 +12,8 @@
     opacity: 0.3;
     
 }
-.postcards-container{
+.postcard-wrapper:hover{
+  
 }
 
 .postcard-wrapper{
@@ -35,21 +36,39 @@
       text-align: center;
       line-height: 200px;
       font-size: 64px;
-      letter-spacing: 0.1em;
-      background:#4B3621;
-      
+      letter-spacing: 0.1em;      
+  }
+  .js-post-image{
+    background:#4B3621;
+  }
+  .java-post-image{
+   background:#3B3C36;
+  }
+  .git-post-image{
+    background: #343434;
+  }
+  .cpp-post-image{
+      background: #253529;
   }
   .post-desc{
      /* border:1px solid #f2f2f2;  */
      border-top: 0;
      padding:30px 0 20px 0 ;
-     background: wheat;
-  
   }
-  .postcard-wrapper:hover .post-desc{
-      /* text-decoration: underline; */
+  .js-post-desc{
+    background: wheat;
+
   }
-  
+  .java-post-desc{
+    background:#c0c0c0;
+  }
+  .git-post-desc{
+      background: #dcd0ba;
+  }
+  .cpp-post-desc{
+    background: #b5e2ff;
+
+  }
   
   .dimmed{
       color: #696969;;
