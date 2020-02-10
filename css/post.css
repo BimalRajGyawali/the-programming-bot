@@ -1,22 +1,39 @@
 .post-container{
-    margin-top: 2px;
+    margin-top: 120px;
     /*  */
 }
 
 .post-container h1{
-    padding:30px 0 18px 0px;
+    padding:60px 0 14px 0px;
+    font-size: 2em;
+    font-family: 'Lora';
+    letter-spacing: 0.03em;
+    word-spacing: 0.05em;
+}
+.date{
+    display: block;
+    margin-bottom: 30px;
 }
 .post-container p{
-    padding:30px 15px 15px 0;
-    line-height: 1.8em;
-    text-align: justify;
+    padding:15px 15px 15px 0;
+    line-height: 1.5em;
+    font-size:1.3em;
+
+}
+.list{
+    list-style: none;
+    line-height: 2em;
     font-size:1.2em;
+}
+.section-heading{
+    padding: 50px 0 10px 0;
+    font-size: 1.6em;
 }
 .post-container a:hover{
   text-decoration: underline;
 
 }
-.main{
+.post-container{
     background: #fff;
     padding-left: 20px;
     padding-right: 20px;
@@ -51,6 +68,9 @@
     font-weight: 600;
     font-size: 1.2em;
 }
+.blue{
+    color: blue;
+}
 .border{
     border-bottom: 1px solid #000;
     width:98%;
@@ -68,51 +88,17 @@
         margin-top: 5px;
         
  }
-   .main{
-       width:98%;
-       float:left;
-       margin-right: 10px;
-       margin-left: 10px; 
-       
-   }  
-   .right-bar{
-    display: block;
-    width:100%;
-    float: left;
-
-  }
-  .recent{
-      width:50%;
-      float: left;
-  }
- 
-
 }
 
 
 
 @media only screen and (min-width:768px){
     .post-container{
-        width:98%;
+        width:60%;
         margin: 0 auto;
         margin-top: 5px;
         padding-bottom: 50px;
 
         
  }
-    .main{
-        width:60%;
-        float: left;
-        margin-left: 10%;
-
-
-    }
-    .right-bar{
-        display: block;
-        width:25%;
-        float: left;
- }
-.recent{
-    width: 100%;
-}
 }

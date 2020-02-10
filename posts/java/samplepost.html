@@ -32,53 +32,66 @@
         </nav>
     </header>
     <main class="main-container">
-        <div class="post-container clearfix">
-            <div class="main">
-                 <h1>Mail Sender in Java Using Spring Boot</h1>
-                 <span class="dimmed">October 28,2020</span>
-                 <p> friend contacted me recently, he hosts some of his websites on Github and points his domain name to hosted projects on gh-pages. He just built an app using react and was having a hard time deploying it to GitHub pages, most folks are used to deploying static web pages to gh-pages but react applications seem a little more difficult to deploy.
-                 Well, it’s simpler than you might think, in this article I’ll be showing you how to deploy your react applications to gh-pagesin no time. </p>
-                 <p> friend contacted me recently, he hosts some of his websites on Github and points his domain name to hosted projects on gh-pages. He just built an app using react and was having a hard time deploying it to GitHub pages, most folks are used to deploying static web pages to gh-pages but react applications seem a little more difficult to deploy.
-                 Well, it’s simpler than you might think, in this article I’ll be showing you how to deploy your react applications to gh-pagesin no time. </p>
-                 <p> friend contacted me <a href="">This is link</a> recently, he hosts some of his websites on Github and points his domain name to hosted projects on gh-pages. He just built an app using react and was having a hard time deploying it to GitHub pages, most folks are used to deploying static web pages to gh-pages but react applications seem a little more difficult to deploy.
-                 Well, it’s simpler than you might think, in this article I’ll be showing you how to deploy your react applications to gh-pagesin no time. </p>
-                 <script src="https://gist.github.com/BimalRajGyawali/4c157d7972e8b784064dfc7d2e089f49.js"></script>
-                 <p> friend contacted me recently, he hosts some of his websites on Github and points his domain name to hosted projects on gh-pages. He just built an app using react and was having a hard time deploying it to GitHub pages, most folks are used to deploying static web pages to gh-pages but react applications seem a little more difficult to deploy.
-                 Well, it’s simpler than you might think, in this article I’ll be showing you how to deploy your react applications to gh-pagesin no time. </p>
-    </div>
-             <div class="right-bar clearfix">
-                 <div class="recent">
-                     <ul>
-                         <li>Upcoming Posts</li>
-                         <li><a href="">Mail Sender in Java</a></li>
-                         <li><a href="">Git - Get Started with</a></li>
-                         <li><a href="">Callbacks in JavaScript</a></li>
-                         <li><a href="">Objects in JavaScript</a></li>
-                         <li><a href="">Working with remote repo in Git</a></li>
-                     </ul>
-                 </div>
-                 <div class="recent shadow">
-                     <ul>
-                         <li>More on Java</li>
-                         <li><a href="">Mail Sender in Java</a></li>
-                         <li><a href="">Git - Get Started with</a></li>
-                         <li><a href="">Callbacks in JavaScript</a></li>
-                         <li><a href="">Objects in JavaScript</a></li>
-                         <li><a href="">Working with remote repo in Git</a></li>
-                     </ul>
-                 </div>
-                 <div class="recent shadow">
-                     <ul>
-                         <li>Tags</li>
-                         <li><a href="">Java</a></li>
-                         <li><a href="">Git</a></li>
-                         <li><a href="">JavaScript</a></li>
-                         <li><a href="">The Top 5's</a></li>
-                         <li><a href="">Learning Path</a></li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
+        <section class="post-container">
+                 <h1>Rest API : How to Build with Spring Boot</h1>
+                 <span class="dimmed date">October 28,2020</span>
+                 <img class="image" src="../../img/boot.png" alt="picture">
+                 <p>REST, stands for Representational State Transfer, which is an architectural style to develop APIs.
+                    REST API is an application program interface that exchanges JSON (or any other documents).
+                    It uses HTTP requests to GET, POST, PUT and DELETE data.</p>
+        
+                  <p>This blog post will be a guide to develop 'RESTful web service' or 'REST APIs' using Spring Boot,
+                    Hibernate, JPA and MYSQL.</p>
+        
+                <p>We will divide this task into following steps :</p>
+        
+                    <ul class="list">
+                      <li>1. Create Spring Boot Project</li>
+                      <li>2. Configure Database</li>
+                      <li>3. Create Model</li>
+                      <li>4. Create JPA Repository Layer</li>
+                      <li>5. Create Rest Controller</li>
+                      <li>6. Run The Project</li>
+                    </ul>
+        
+              <h2 class="section-heading">1. Create Spring Boot Project</h2>
+               <p>Open SpringSTS and create a new Spring Starter Project with JPA, JDBC,
+                  Hibernate, Web and Rest Dependencies, or you can download a project from
+                  <a href="https://start.spring.io/">start.spring.io</a>.</p>
+        
+        
+                <h2 class="section-heading">2. Configure Database</h2>
+            <p>Create a database named 'restdb' in MYSQL. Then configure database properties in
+              <span class="blue">application.properties</span>.</p>
+        
+           <p>
+            <script src="https://gist.github.com/BimalRajGyawali/18a8e65523f79aadc00deae56d9a3f07.js"></script>
+        
+           </p>
+        
+               <h2 class="section-heading">3. Create Model</h2> <br/>
+        
+        <p>     <script src="https://gist.github.com/BimalRajGyawali/1feaa7f8f59077c490e480f86850737c.js"></script>
+        </p>
+        
+         <h2 class="section-heading">4. Create JPA Repository Layer</h2><br/>
+        
+        <p> <script src="https://gist.github.com/BimalRajGyawali/73407f4494fa6d314279a31348ed588b.js"></script>
+        </p>
+         <h2 class="section-heading">5. Create Rest Controller</h2><br/>
+        
+       <p>  <script src="https://gist.github.com/BimalRajGyawali/090c8de439d0e57d34cf7b5125ecf964.js"></script>
+       </p> 
+          <h2 class="section-heading">6. Run The Project</h2>
+       <p> 
+        <script src="https://gist.github.com/BimalRajGyawali/76e29676b12b12a914b19a7f2aea9744.js"></script>
+    </p> 
+        
+          <p>Finally, run the project as Spring Boot App. The project will
+            run at <span class="blue">http://localhost:8080</span>.</p>
+        
+         </section>
+           
          <section class="postcard-section">
             <p class="info">More From This Blog</p>
             <div class="border"></div>
@@ -167,6 +180,7 @@
          </div>
         
          </div>
+         </section>
 
          
     </main>
