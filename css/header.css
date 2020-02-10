@@ -15,8 +15,6 @@
 }
 .logo{
    font-weight: 600;
-   width: 88%;
-   float: left;
    letter-spacing: 0.01em;
    font-size : 2em;
 }
@@ -27,8 +25,6 @@
     margin: 6px 0;
 }
 .mobile-menu{
-    width: 10%;
-    float: right;
     cursor: pointer;
 }
 .nav-bar ul{
@@ -43,6 +39,16 @@
 }
 .hide{
     display: none;
+}
+/* For tablets */
+@media only screen and (min-width : 600px){
+    .logo{
+        width: 88%;
+        float: left;
+    }
+    .mobile-menu{
+        width: 10%;
+        float: right;
 }
 
 /*For desktops */
