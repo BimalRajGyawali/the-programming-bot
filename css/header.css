@@ -16,23 +16,30 @@
 .logo{
    font-weight: 600;
    letter-spacing: 0.01em;
-   font-size : 2em;
+   font-size : 1.5em;
+   width: 88%;
+   float: left;
 }
 .bar{
-    height: 5px;
+    height: 3px;
     width: 35px;
     background: #fff;
     margin: 6px 0;
 }
 .mobile-menu{
+    width: 10%;
+    float: right;
+
     cursor: pointer;
 }
 .nav-bar ul{
     list-style: none;
+    line-height: 2em;
+
 }
-.nav-bar ul li{
+.nav-bar ul li a{
     padding-top:10px;
-    font-size:1.2em;
+    font-size:1em;
 }
 .nav-bar ul li a:hover{
     border-bottom : 2px solid #fff;
@@ -43,12 +50,12 @@
 /* For tablets */
 @media only screen and (min-width : 600px){
     .logo{
-        width: 88%;
-        float: left;
+        font-size : 1.5em;
     }
-    .mobile-menu{
-        width: 10%;
-        float: right;
+    .bar{
+        height: 5px;
+    }
+    
 }
 
 /*For desktops */
@@ -63,7 +70,7 @@
     }
     .nav-bar ul li{
         display: inline;
-        line-height: 40px;
+        line-height: 30px;
         font-size: 1.4em;
     }
     .nav-bar ul li a{
@@ -81,7 +88,4 @@
         float: left;
     }
     
-    
-
-
 }
