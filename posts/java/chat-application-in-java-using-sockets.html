@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <meta name="author" content="Bimal Raj Gyawali">
+    <meta name="title" content="GUI Chat Application in Java using Socket">
+    <meta name="keywords" content="GUI Chat App in Java using socket, Java GUI Chat app, socket programming,
+     build chat app in java using socket">
+     <meta name="description" content="Java Socket Programming is used to establish the connection between the application 
+     running on different JREs, and Java Sockets are the end-points of that communication.">
+     <meta property=”og:title” content=”GUI Chat Application in Java using Socket” />
+     <meta property=”og:url” content=”https://bimalrajgyawali.github.io/the-programming-bot/” />
+     <meta property=”og:type” content=”blog” />
+     <meta property="og:description" content="Java Socket Programming is used to establish the connection between the application 
+     running on different JREs, and Java Sockets are the end-points of that communication."> 
+    
+
+
+     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/header.css">
@@ -35,63 +49,61 @@
     </header>
     <main class="main-container">
         <section class="post-container">
-                 <h2>API : An Introduction</h2>
-                 <span class="dimmed date">October 28,2020</span>
-                 <img class="image" src="../../img/api.jpg" alt="picture">
-                 <p> API is a regular term used widely in field of web development.
-                    But many people don't have any , or have a vague idea about APIs.
-                       In this blog post, we will be seeing what exactly are APIs and their significance.</p>
-       
-       
-                    <h2 class="section-heading">What exactly are APIs?</h2>
-       
-                   <p> Well, APIs stand for Application Programming Interfaces, which allow applications to communicate with one another.
-                      Making it simple, API allows one piece of code to talk to another.</p>
-       
-                  <p>Let me give you an example.</p>
-       
-              <p> You are developing a web based application, lets say, using PHP.
-                 You want to integrate Facebook Login in your application.
-                  Here, we want a communication between two different platforms, one is your web application
-                  written in PHP and other is Facebook Login Feature build in whatever technology/language.
-                  In such situations, we simply get our job done by using APIs provided Facebook.</p>
-       
-       
-         <p> Thus, API acts as a messenger that takes requests from client and returns response from server.
-           Don't get yourself confused here. API is not itself a server.
-           It simply is a messenger or communicator or interface. Request is done by sending an HTTP request to a server.</p>
-       
-       
-        <!---image -->
-        
-          <img class="image" src="../../img/api.png" alt="api">
-       
-         <p>API is an interface between client and server applications</p>
-       
-         <h2 class="section-heading">How API allows communication between two different platforms?</h2>
-           <p>One of the arguments that is put forward to answer this question is that,
-             API deals with universal data formats like JSON and XML, recognized by all platforms.
-             That is to say, data returned by API is in JSON or XML formats. Since, XMLs are difficult to work with, JSON is preferred.</p>
-       
-         <h2 class="section-heading">The classic 'Waiter' example</h2>
-           <p>Suppose, you are in a restaurant. You ordered the waiter some food, and
-             then the waiter brought you the food from the kitchen.</p>
-       
-         <p>Taking the analogy here:</p>
-       
-          <ul class="list">
-            <li><span class="blue italics">You</span> are the client.</li>
-            <li><span class="blue italics">Kitchen</span> is the server.</li> 
-            <li><span class="blue italics">Food</span> is the service you are requesting for.</li>
-            <li><span class="blue italics">Waiter</span> is the API.</li>
-          </ul>
-       
-               <h2 class="section-heading">Conclusion:</h2>
-       
-                   <p>API is the interface or communicator which allows the communication between different platforms.
-                    In web development, API often refers to the way in which we retrieve information from an online server.
-                    API is a messenger which carries request from client application and brings response from server application.
-                  </p>
+                 <h2>GUI Chat Application in Java using Sockets</h2>
+                 <span class="dimmed date">February 16,2020</span>
+                 <img class="image" src="../../img/chat-app.jpg" alt="picture">
+                 
+                 <p>Java Socket Programming is used to establish the connection between the application 
+                     running on different JREs, and Java Sockets are the end-points of that communication.
+                     In the client-server based architecture, the two end-points are Client and Server.
+                     Client is represented by <span class="italics">Socket</span> class and Server is represented
+                     by <span class="italics">ServerSocket</span> class of Java situated in <span class="italics">java.net</span>
+                     package.
+                 </p>
+                 <p>
+                    Client and Server have their input and output streams. We access those streams and make the client and
+                    server communicate with each other.
+                </p>
+                <p>
+                    We have divided the task of building GUI Chat App in following steps:
+                </p>
+                <ul class="list">
+                 <li class="bold">1. Create the Server</li>
+                 <li class="bold">2. Create GUI Client</li>
+                 <li class="bold">3. Associate client with ClientHandler</li>
+                 <li class="bold">4. Communication among multiple instances of Clients</li>
+                </ul>
+
+            <p> We will cover them in series of blog posts.</p>
+
+            <h2 class="section-heading">1. Create the Server</h2>
+            
+            <p>
+                We create a <span class="italics">Server</span> class which :
+            </p>
+            <ul class="list">
+                <li>i) has ServerSocket and a port </li>
+                <li>ii) listens clients' requests</li>
+                <li>iii) responses to the clients</li>
+            </ul>
+            <p>We implement this in code as :</p>
+            <p>
+                <script src="https://gist.github.com/BimalRajGyawali/b9ff50247b513195b75121fb6da46652.js"></script>
+            </p>
+
+            <h2 class="section-heading">Test it With Telnet Client</h2>
+            <p>
+                Open your terminal and open a telnet session to request to the server 
+                at localhost listening to the port 6000.
+            </p>
+            <img class = "image" src="../../img/terminal-telnet.png" alt="telnet terminal">
+            <p>
+                Up to now, we got our server running which accept the clients' requests and
+                send them the message "Hello Client".
+            </p>
+
+
+
           </section>
            
          <section class="postcard-section">
@@ -99,16 +111,7 @@
             <p class="info">More From This Blog</p>
             <div class="border"></div>
           </div>
-            <div class="postcards-container">
-                   <!-- creates postcard -->
-           <div class="postcard-wrapper" onclick="direct('../java/chat-application-in-java-using-sockets.html')">
-            
-            <h2>GUI Chat Application in Java using Sockets</h2>
-            <p class="dimmed">Posted on: <span>February 16,2020</span></p>
-            <p>Java Socket Programming is used to establish the connection between the application 
-                     running on different JREs, and   <span class="dimmed">Read more....</span></p>
-             <div class="border"></div>
-     </div>
+            <div class="postcards-container clearfix">
                <!-- creates postcard -->
                <div class="postcard-wrapper" onclick="direct('../java/mail-sender-in-java.html')">
                 
@@ -140,6 +143,17 @@
                          <div class="border"></div>
 
                  </div>
+                                  <!-- creates postcard -->
+             <div class="postcard-wrapper" onclick="direct('../posts/java/apis-application-programming-interface.html')">
+             
+                <h2>API : An Intoduction</h2>
+                <p class="dimmed">Posted on: <span>August 14, 2019</span></p>
+                <p> API is a regular term used widely in field of web development.
+                  But many people don't have any  , or have a vague idea about APIs <span class="dimmed">Read more....</span></p>
+                  <div class="border"></div>
+
+
+         </div>
                     
                 <!-- creates postcard -->
              <div class="postcard-wrapper" onclick = "direct('../git/get-started-with-git.html')">
