@@ -1,6 +1,6 @@
 .header{
     /* background:#2E8B57; */
-   background: #696969;
+   background: #009b77;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 4%;
@@ -45,7 +45,7 @@
     font-size:1em;
 }
 .nav-bar ul li a:hover{
-    border-bottom : 2px solid #fff;
+    color :black;
 }
 .hide{
     display: none;

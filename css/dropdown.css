@@ -1,0 +1,30 @@
+select{
+    padding:5px 10px 5px 10px;
+    background:  #009b77;
+    color:#fff;
+    font-size: 1.3em;
+    font-family: Lora;
+  }
+  select:hover{
+      color: black;
+  }
+
+  select option{
+    background: #fff;
+    color: black;
+    margin-top: 20px;
+    
+  }
+
+  select{
+      display: none;
+  }
+
+  @media only screen and (min-width:769px){
+      select{
+           display: inline;
+      }
+      .lg-hide{
+          display: none;
+      }
+  }
