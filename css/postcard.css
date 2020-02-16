@@ -12,9 +12,7 @@
     opacity: 0.3;
     
 }
-.postcard-wrapper:hover .post-image{
-   color : red;
-}
+
 
 .postcard-wrapper{
     
@@ -27,49 +25,13 @@
   .postcard-wrapper:first-child{
     margin-top: 60px;
   }
-  .post-image{
-      height: 200px;
-      /* border-radius: 3px; */
-      position: relative;
-      color:white;
-      font-weight: bold;
-      text-align: center;
-      line-height: 200px;
-      font-size: 64px;
-      letter-spacing: 0.1em;      
-  }
-  .js-post-image{
-    background:#4B3621;
-    
-  }
-  .java-post-image{
-   background:#3B3C36;
-  }
-  .git-post-image{
-    background: #343434;
-  }
-  .oop-post-image{
-      background: #253529;
-  }
+  
   .post-desc{
      /* border:1px solid #f2f2f2;  */
      border-top: 0;
      padding:30px 0 20px 0 ;
   }
-  .js-post-desc{
-    background: wheat;
-
-  }
-  .java-post-desc{
-    background:#c0c0c0;
-  }
-  .git-post-desc{
-      background: #dcd0ba;
-  }
-  .oop-post-desc{
-    background: #b5e2ff;
-
-  }
+  
   
   .dimmed{
       color: #696969;;
