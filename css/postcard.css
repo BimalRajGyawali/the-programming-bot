@@ -19,12 +19,12 @@
     width:90%;
     margin: 0 auto; 
     cursor: pointer;
-    margin-top: 30px;
     margin-bottom: 50px;
   }
-  .postcard-wrapper:first-child{
+
+  .margin{
     margin-top: 60px;
-  }
+  } 
   
   .post-desc{
      /* border:1px solid #f2f2f2;  */
