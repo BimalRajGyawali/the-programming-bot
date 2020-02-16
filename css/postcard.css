@@ -22,10 +22,10 @@
     margin: 0 auto; 
     cursor: pointer;
     margin-top: 30px;
-    margin-bottom: 30px;
-   
-
-  
+    margin-bottom: 50px;
+  }
+  .postcard-wrapper:first-child{
+    margin-top: 60px;
   }
   .post-image{
       height: 200px;
@@ -78,9 +78,15 @@
   h2,p{
       padding:0 5px 10px 20px;
   }
-  h2{
-      font-family: 'Lora';
+  .postcard-wrapper h2{
+    font-family: 'Open Sans', sans-serif;
       letter-spacing: 0.03em;
+      font-size: 2em;
+      
+  }
+  .postcard-wrapper p{
+    font-size: 1.3em;
+    padding-bottom: 20px;
   }
   .color{
       color:red;
@@ -88,35 +94,24 @@
   /*For tablets*/
   @media only screen and (min-width:600px){
       .postcard-wrapper{
-          width:48%;
-          float: left;
-          margin-right: 1%;
-          margin-left: 1%; 
+          width:60%;
+         
       }
   }
   
   /*For desktops*/
   @media only screen and (min-width:769px){
-      .postcard-wrapper{
-          width: 31.33%;
-          float: left;
-          margin-right: 1%;
-          margin-left: 1%;
+     .postcard-wrapper{
+          width: 50%;
+          
       }
      
-    .postcard-section{
-      width: 90%;
-      margin:0 auto;
-    
-    } 
+   
   }
   /*For extra large desktops*/
   @media only screen and (min-width:1400px){
       .postcard-wrapper{
-          width: 23%;
-          float: left;
-          margin-right: 1%;
-          margin-left: 1%;
-      }
+          width: 40%;
+      } 
   }
   
