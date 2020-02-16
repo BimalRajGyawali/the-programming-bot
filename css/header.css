@@ -80,11 +80,11 @@
    
     .nav-bar{
         display: block;
-        width: 50%;
-        float: right;
+        width: 70%;
+        float: left;
     }
     .logo-bar{
-        width: 50%;
+        width: 30%;
         float: left;
     }
     
