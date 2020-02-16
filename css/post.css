@@ -1,4 +1,4 @@
-.post-container h1{
+.post-container h2{
     padding:20px 0 14px 0px;
     font-size: 2em;
     font-family: 'Lora';
@@ -15,10 +15,11 @@
     font-size:1.3em;
 
 }
+
 .list{
     list-style: none;
     line-height: 2em;
-    font-size:1.2em;
+    font-size:1.3em;
 }
 .section-heading{
     padding: 50px 0 10px 0;
@@ -44,9 +45,7 @@
     font-weight: 600;
     font-size: 1.2em;
 }
-.blue{
-    color: blue;
-}
+
 .border{
     border-bottom: 1px solid #000;
     width:98%;
@@ -55,6 +54,31 @@
     margin-bottom: 20px;
     opacity: 0.3;
     
+}
+.border-footer{
+    opacity: 0.1;
+
+}
+.smaller{
+    font-size: 1.3em;
+}
+.italics{
+    font-style: italic;
+}
+.center{
+    text-align: center;
+}
+.blue{
+    color: blue;
+}
+.bold{
+    font-weight: bold;
+}
+.red{
+    color: red;
+}
+.green{
+   color : green;
 }
 
 @media only screen and (min-width:600px){
@@ -65,13 +89,13 @@
         
  }
  .post-container h1{
-     padding-top: 40px;
+     padding-top: 30px;
  }
 }
 
 
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:769px){
     .post-container{
         width:60%;
         margin: 0 auto;
@@ -81,6 +105,6 @@
         
  }
  .post-container h1{
-     padding-top: 60px;
+     padding-top: 40px;
  }
 }

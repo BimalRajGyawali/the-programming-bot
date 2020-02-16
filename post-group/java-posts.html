@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/postcard.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>The Programming Bot</title>
 </head>
 <body>
     <header class="header clearfix">
         <div class="logo-bar clearfix">
-            <h1 class="logo"><a href="#">The Programming Bot </a></h1>
+            <h1 class="logo"><a href="../index.html">The Programming Bot </a></h1>
             <div class="mobile-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -24,109 +25,77 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="java-posts.html">Java</a></li>
-                <li><a href="">JS</a></li>
-                <li><a href="">Git</a></li>               
-                <li><a href="">C++</a></li>               
+                <li><a href="js-posts.html">JS</a></li>
+                <li><a href="git-posts.html">Git</a></li>               
+                <li><a href="oop-posts.html">OOP</a></li>               
             </ul>
         </nav>
     </header>
     <main class="main-container">
         <section class="postcard-section">
-         <p class="info">Recent Posts from This Blog</p>
+         <p class="info">Recent Posts from Java</p>
          <div class="border"></div>
          <div class="postcards-container clearfix">
           
  
              <!-- creates postcard -->
-             <div class="postcard-wrapper">
+             <div class="postcard-wrapper" onclick="direct('../posts/java/mail-sender-in-java.html')">
                  <div class="post-image java-post-image">Java</div>
                  <div class="post-desc java-post-desc">
-                    <h2>CallBacks in Javascript</h2>
-                    <p class="dimmed">Posted on: <span>October 28, 2019</span></p>
-                    <p> Emails via Java Application using any mail servers. In this post, we will use 
-                      Gmail server.Once you create a <span class="dimmed">Read more....</span></p>
+                    <h2>Mail Sender in Java</h2>
+                    <p class="dimmed">Posted on: <span>October 16, 2019</span></p>
+                    <p>Java provides Mailer APIs for sending and receiving emails via Java Application
+                     using any mail servers. In this blog post  <span class="dimmed">Read more....</span></p>
                 </div>
              </div>
                 <!-- creates postcard -->
-                <div class="postcard-wrapper">
+                <div class="postcard-wrapper" onclick="direct('../posts/java/how-to-build-rest-api-using-spring-boot.html')">
                     <div class="post-image java-post-image">Java</div>
                     <div class="post-desc java-post-desc">
-                       <h2>CallBacks in Javascript</h2>
-                       <p class="dimmed">Posted on: <span>October 28, 2019</span></p>
-                       <p> Emails via Java Application using any mail servers. In this post, we will use 
-                         Gmail server.Once you create a <span class="dimmed">Read more....</span></p>
+                       <h2>Rest API With Spring Boot</h2>
+                       <p class="dimmed">Posted on: <span>August 24, 2019</span></p>
+                       <p> REST, stands for Representational State Transfer, which is an 
+                        architectural style to develop APIs.  REST API is an <span class="dimmed">Read more....</span></p>
                    </div>
                 </div>
                    <!-- creates postcard -->
-             <div class="postcard-wrapper">
+             <div class="postcard-wrapper" onclick="direct('../posts/java/apis-application-programming-interface.html')">
                 <div class="post-image java-post-image">Java</div>
                 <div class="post-desc java-post-desc">
-                   <h2>CallBacks in Javascript</h2>
-                   <p class="dimmed">Posted on: <span>October 28, 2019</span></p>
-                   <p> Emails via Java Application using any mail servers. In this post, we will use 
-                     Gmail server.Once you create a <span class="dimmed">Read more....</span></p>
+                   <h2>API : An Intoduction</h2>
+                   <p class="dimmed">Posted on: <span>August 14, 2019</span></p>
+                   <p> API is a regular term used widely in field of web development.
+                     But many people don't have any  , or have a vague idea about APIs <span class="dimmed">Read more....</span></p>
                </div>
             </div>
                <!-- creates postcard -->
-               <div class="postcard-wrapper">
+               <div class="postcard-wrapper" onclick="direct('../posts/java/java-best-practices.html')">
                 <div class="post-image java-post-image">Java</div>
                 <div class="post-desc java-post-desc">
-                   <h2>CallBacks in Javascript</h2>
-                   <p class="dimmed">Posted on: <span>October 28, 2019</span></p>
-                   <p> Emails via Java Application using any mail servers. In this post, we will use 
-                     Gmail server.Once you create a <span class="dimmed">Read more....</span></p>
+                   <h2>Java Best Practices</h2>
+                   <p class="dimmed">Posted on: <span>July 7, 2019</span></p>
+                   <p>  Programming is not just about writing code. It is about writing Clean, Maintainable, Non-Fragile Code
+                     and  <span class="dimmed">Read more....</span></p>
                </div>
             </div>
+            </div>
         </section>
-        <section class="postcard-section">
-            <p class="info">Recent Posts from This Blog</p>
-            <div class="border"></div>
-            <div class="postcards-container clearfix">
-             
-    
-                <!-- creates postcard -->
-                <div class="postcard-wrapper">
-                    <div class="post-image java-post-image">Java</div>
-                    <div class="post-desc java-post-desc">
-                       <h2>CallBacks in Javascript</h2>
-                       <p class="dimmed">Posted on: <span>October 28, 2019</span></p>
-                       <p> Emails via Java Application using any mail servers. In this post, we will use 
-                         Gmail server.Once you create a <span class="dimmed">Read more....</span></p>
-                   </div>
-                </div>
-                   <!-- creates postcard -->
-                   <div class="postcard-wrapper">
-                       <div class="post-image java-post-image">Java</div>
-                       <div class="post-desc java-post-desc">
-                          <h2>CallBacks in Javascript</h2>
-                          <p class="dimmed">Posted on: <span>October 28, 2019</span></p>
-                          <p> Emails via Java Application using any mail servers. In this post, we will use 
-                            Gmail server.Once you create a <span class="dimmed">Read more....</span></p>
-                      </div>
-                   </div>
-                      <!-- creates postcard -->
-                <div class="postcard-wrapper">
-                   <div class="post-image java-post-image">Java</div>
-                   <div class="post-desc java-post-desc">
-                      <h2>CallBacks in Javascript</h2>
-                      <p class="dimmed">Posted on: <span>October 28, 2019</span></p>
-                      <p> Emails via Java Application using any mail servers. In this post, we will use 
-                        Gmail server.Once you create a <span class="dimmed">Read more....</span></p>
-                  </div>
-               </div>
-                  <!-- creates postcard -->
-                  <div class="postcard-wrapper">
-                   <div class="post-image java-post-image">Java</div>
-                   <div class="post-desc java-post-desc">
-                      <h2>CallBacks in Javascript</h2>
-                      <p class="dimmed">Posted on: <span>October 28, 2019</span></p>
-                      <p> Emails via Java Application using any mail servers. In this post, we will use 
-                        Gmail server.Once you create a <span class="dimmed">Read more....</span></p>
-                  </div>
-               </div>
-           </section>
-     </main>
+      </main>
+      <footer>
+         <div class="border border-footer"></div>
+         <div class="icons">
+           <ul class="icon-list clearfix">
+               <li class="icon"><a  href="https://www.facebook.com/profile.php?id=100013890977140"><img src="../img/fb.png" alt="facebook icon"></a></li>
+               <li class="icon"><a  href="https://www.linkedin.com/in/bimal-raj-gyawali-238a50117/"><img src="../img/linkedin.png" alt="linkedin icon"></a></li>
+               <li class="icon"><a href="https://github.com/BimalRajGyawali"><img src="../img/github.png" alt="github icon"></a>
+               </li>
+             </ul>
+         </div>
+         <p class="center dimmed copyright">&copy; The Programming Bot 2020</p>
+         
+     </footer>
+     <script src="../js/header.js"></script>
+     <script src="../js/direct.js"></script>
  
- 
-</body>
+  </body>
 </html>

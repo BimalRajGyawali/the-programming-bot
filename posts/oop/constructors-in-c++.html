@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/postcard.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="icon" href="../../img/logo.png">
+    <title>The Programming Bot</title>
+</head>
+<body>
+    <header class="header clearfix">
+        <div class="logo-bar clearfix">
+            <h1 class="logo"><a href="../../index.html">The Programming Bot </a></h1>
+            <div class="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="nav-bar hide " id="nav">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../post-group/java-posts.html">Java</a></li>
+                <li><a href="../../post-group/js-posts.html">JS</a></li>
+                <li><a href="../../post-group/git-posts.html">Git</a></li>               
+                <li><a href="../../post-group/oop-posts.html">OOP</a></li>               
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="post-container">
+                 <h2>Constructors in C++ </h2>
+                 <span class="dimmed date">October 28,2020</span>
+                 <img class="image" src="../../img/constructor.jpeg" alt="constructor in c plus plus">
+                 <p>Constructors are the special type of member functions that have same name as that of the class</p>
+
+                 <p>So, if constructors are the member functions,</p>
+       
+                 <h2 class="section-heading">Who calls them and when?</h2>
+       
+                 <p>Constructors are called automatically by the compiler at the time of object creation.
+                    Objects can be created only through constructors. We don't have to call constructors,
+                    it is the job of compiler.</p>
+       
+                 <h2 class="section-heading">What is their return type?</h2>
+       
+                 <p> Syntactically, constructors don't have any return type.
+                   But, logically, as constructors create and return object to the program,
+                   it is said that constructors have class-type return type.</p>
+       
+                 <h2 class="section-heading"> Can constructors be overloaded like member functions?</h2>
+       
+                  <p>Yes. In case of constructor overloading, compiler matches the signature of the constructor
+                     and matched one is called. The constructors with arguments are known as parameterized constructors
+                     and those without arguments are known as default constructors.</p>
+       
+                   <p>example:</p>
+       
+       
+                     <p><span class="blue italics"> Box.cpp</span>
+                        <script src="https://gist.github.com/BimalRajGyawali/72f7d8ccf80bd6068e9ded3371f5cff5.js"></script><br/><br/>
+          </p>
+                     <p><span class="blue italics">main.cpp</span>
+                        <script src="https://gist.github.com/BimalRajGyawali/8fbda2f91a8efbba7c09980da9b1ce5f.js"></script><br/>
+          </p>
+       
+                  <p>We have said that objects are created only through the constructors.
+                    But, we have often, not only created the class without constructors,
+                    but also created its object. How is the object created without the
+                    constructor, if the objects are created only through constructors?</p>
+       
+                  <p>The answer is, compiler adds default constructor to every classes during compilation.</p>
+       
+                  <p>example:</p>
+       
+                <p> <span class="blue italics">Student.cpp</span>
+                    <script src="https://gist.github.com/BimalRajGyawali/6577902341f0e19385367c7e30259e20.js"></script><br />
+          </p>
+                   <p>We have not created constructor in Student.cpp. Yet, we can create its object with no difficulty in main.cpp as:</p>
+       
+                  <p>
+                    <span class="blue italics">main.cpp</span>
+                    <script src="https://gist.github.com/BimalRajGyawali/92dd1e58631369e0c7a02116a59c635c.js"></script><br />
+          </p>
+                    <p>It is because during compilation, the compiler adds default constructor as :</p>
+       <p>
+        <span class="blue italics">Student.cpp</span>
+       <script src="https://gist.github.com/BimalRajGyawali/c01f32ee6722947bb0a642a93383023b.js"></script><br />
+</p>
+                 <p>Thus, every classes have at least one constructor; either we create or the compiler.</p>
+          </section>
+           
+         <section class="postcard-section">
+            <p class="info">More From This Blog</p>
+            <div class="border"></div>
+            <div class="postcards-container clearfix">
+            <!-- creates postcard -->
+            <div class="postcard-wrapper" onclick="direct('../oop/why-constructors-in-c++.html')">
+               <div class="post-image oop-post-image">OOP</div>
+               <div class="post-desc oop-post-desc">
+                  <h2>Why Constructors in C++ </h2>
+                  <p class="dimmed">Posted on: <span>July 14, 2019</span></p>
+                  <p> Have you ever wondered, why constructors are so important in object oriented languages ?
+                      Do you, actually know when  <span class="dimmed">Read more....</span></p>
+              </div>
+           </div>
+
+              <!-- creates postcard -->
+              <div class="postcard-wrapper" onclick="direct('../java/how-to-build-rest-api-using-spring-boot.html')">
+                  <div class="post-image java-post-image">Java</div>
+                  <div class="post-desc java-post-desc">
+                     <h2>Rest API With Spring Boot</h2>
+                     <p class="dimmed">Posted on: <span>August 24, 2019</span></p>
+                     <p> REST, stands for Representational State Transfer, which is an 
+                      architectural style to develop APIs.  REST API is an <span class="dimmed">Read more....</span></p>
+                 </div>
+              </div>
+                 
+                 <!-- creates postcard -->
+           <div class="postcard-wrapper" onclick="direct('../java/apis-application-programming-interface.html')">
+              <div class="post-image java-post-image">Java</div>
+              <div class="post-desc java-post-desc">
+                 <h2>API : An Intoduction</h2>
+                 <p class="dimmed">Posted on: <span>August 14, 2019</span></p>
+                 <p> API is a regular term used widely in field of web development.
+                   But many people don't have any  , or have a vague idea about APIs <span class="dimmed">Read more....</span></p>
+             </div>
+          </div>
+             <!-- creates postcard -->
+             <div class="postcard-wrapper" onclick="direct('../java/java-best-practices.html')">
+              <div class="post-image java-post-image">Java</div>
+              <div class="post-desc java-post-desc">
+                 <h2>Java Best Practices</h2>
+                 <p class="dimmed">Posted on: <span>July 7, 2019</span></p>
+                 <p>  Programming is not just about writing code. It is about writing Clean, Maintainable, Non-Fragile Code
+                   and  <span class="dimmed">Read more....</span></p>
+             </div>
+          </div>
+          
+                   <!-- creates postcard -->
+                   <div class="postcard-wrapper" onclick="direct('../java/mail-sender-in-java.html')">
+                     <div class="post-image java-post-image">Java</div>
+                     <div class="post-desc java-post-desc">
+                        <h2>Mail Sender in Java</h2>
+                        <p class="dimmed">Posted on: <span>October 16, 2019</span></p>
+                        <p>Java provides Mailer APIs for sending and receiving emails via Java Application
+                         using any mail servers. In this blog post  <span class="dimmed">Read more....</span></p>
+                    </div>
+                 </div>
+                 <!-- creates postcard -->
+             <div class="postcard-wrapper" onclick = "direct('../git/get-started-with-git.html')">
+               <div class="post-image git-post-image">Git</div>
+               <div class="post-desc git-post-desc">
+                  <h2>Git : Get Started With</h2>
+                  <p class="dimmed">Posted on: <span>September 18, 2019</span></p>
+                  <p>GIT has been established as a popular and a must-know tool
+                 for developers in recent time. Basically, Git is a  <span class="dimmed">Read more....</span></p>
+              </div>
+           </div>
+         </div>
+         </section>
+
+         
+    </main>
+
+    <footer>
+      <div class="border border-footer"></div>
+      <div class="icons">
+        <ul class="icon-list clearfix">
+            <li class="icon"><a  href="https://www.facebook.com/profile.php?id=100013890977140"><img src="../../img/fb.png" alt="facebook icon"></a></li>
+            <li class="icon"><a  href="https://www.linkedin.com/in/bimal-raj-gyawali-238a50117/"><img src="../../img/linkedin.png" alt="linkedin icon"></a></li>
+            <li class="icon"><a href="https://github.com/BimalRajGyawali"><img src="../../img/github.png" alt="github icon"></a> </li>
+          </ul>
+      </div>
+      <p class="center dimmed copyright">&copy; The Programming Bot 2020</p>
+      
+  </footer>
+  <script src="../../js/header.js"></script>
+  <script src="../../js/direct.js"></script>
+</body>
+</html>

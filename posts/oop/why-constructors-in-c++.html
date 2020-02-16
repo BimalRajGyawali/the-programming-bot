@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/postcard.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="icon" href="../../img/logo.png">
+    <title>The Programming Bot</title>
+</head>
+<body>
+    <header class="header clearfix">
+        <div class="logo-bar clearfix">
+            <h1 class="logo"><a href="../../index.html">The Programming Bot </a></h1>
+            <div class="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="nav-bar hide " id="nav">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../post-group/java-posts.html">Java</a></li>
+                <li><a href="../../post-group/js-posts.html">JS</a></li>
+                <li><a href="../../post-group/git-posts.html">Git</a></li>               
+                <li><a href="../../post-group/oop-posts.html">OOP</a></li>               
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="post-container">
+                 <h2>Why Constructors in C++ ?</h2>
+                 <span class="dimmed date">October 28,2020</span>
+                 <img class="image" src="../../img/why-constructor.jpg" alt="constructor in c plus plus">
+
+                 <p> Have you ever wondered, why constructors are so important in object oriented languages ?
+                    Do you, actually know when and how to use the constructors ?
+                    Well, in this blog post , we will be focusing on the same thing which is divided into following three points.
+                  </p>
+            <ul class="list">
+                <li>1) To Construct the objects</li>
+                <li> 2) To Impose Forceful Object Construction</li>
+                <li> 3) To Stop Object Creation</li>
+               
+            </ul>
+        
+        
+            <h2 class="section-heading">1. To Construct the objects :</h2>
+          <p>In the <a href="../cpp/constructors-in-c++.html">previous</a> post,
+             we have discussed that the job of the constructor is to create the objects of a class and return them to the program.
+             To set the values to the data members of the objects, we may use public member functions, popularly known as setters as :
+         </p>
+        
+         <p><span class="blue italics">Student.cpp</span>
+            <script src="https://gist.github.com/BimalRajGyawali/2bd84b525ce075e590b604b2e2740885.js"></script>
+           </p>
+        
+           <p>Here setId(), setName() and setMarks() are the setters which set the values of data-members of object.</p>
+        
+             <p><span class="blue italics">main.cpp</span>
+                <script src="https://gist.github.com/BimalRajGyawali/a99a9ba689c15e3fcde77ef47ff87e36.js"></script><br />
+           </p>
+            <p class="bold">
+                But, what if we want to set the values to data-members of object while it is being created ?</p>
+        
+                 <p>The answer is quite simple and straight forward, give the values, to be set, to the constructors.
+                   It will set the data to the object at the time of creation.</p>
+        
+            <p>example:</p>
+        
+            <p> <span class="blue italics">Student.cpp</span>
+                <script src="https://gist.github.com/BimalRajGyawali/e2426d44b5e0d6199ca066d9eab45983.js"></script><br />
+           </p>
+             <p><span class="blue italics">main.cpp</span>
+                <script src="https://gist.github.com/BimalRajGyawali/293f45a03717e5361491a1be4ac15b5c.js"></script><br/>
+           </p>
+            <h2 class="section-heading">2. To Impose Forceful Object Construction</h2>
+                <p>Constructors are important tool if you don't want anyone to create object of a class
+                  without setting a particular data member to it. </p>
+        
+              <p>Let me give an example.</p>
+        
+           <p>We have Student.cpp class with data-members id, name and marks.
+             What if you don't want to let anyone to create an object without setting 'id'?
+             Again, the answer is constructor.</p>
+        
+            <p>Let's implement this in code.</p>
+        
+         <p>  <span class="blue italics">Student.cpp</span>
+            <script src="https://gist.github.com/BimalRajGyawali/9538652339baa6a0408162a1ed1fa954.js"></script><br />
+         </p>
+           <p>Here, since there is only one constructor with one integer parameter, we can create object
+             only by passing one integer value i.e id , in this case.
+             This way, we prevent object creation without setting a particular data-member.</p>
+        
+         <p class="bold">Note:</p>
+        
+        
+           <p>1) The main thing is, you can create only those types of objects which match the
+             constructors signature present in the class.</p>
+        
+           <p>2) When you don't write any constructor, compiler automatically adds a default one.
+             But, if you write at least one constructor, compiler won't add the default
+             constructor to your class.</p>
+        
+        
+           <h2 class="section-heading">3. To Stop Object Creation:</h2>
+        
+            <p>Constructors are also used if you don't want to let the object creation for your class.
+              For this, simply make the constructor private (don't include a friend class to your class).</p>
+        
+           <p>You, probably, be thinking, why would I even create a class if I don't want to allow its
+             object creation. Well, out of many, the two important reasons behind not allowing object creation are:
+           </p>
+
+         <ul class="list">
+            <li> 1) Class is assigned with only functionalities (public static member functions).<br />
+            </li>  
+            <li>2) Class is implementing Singleton Design Pattern.</li>
+         </ul>
+    
+        
+        <p>For this post, we will only see the first condition. We will be discussing the Singleton Design Pattern in future posts.</p>
+        
+           <p>Let, We have a class named  Operation.cpp
+            with the functionalities
+             of addition, subtraction, multiplication and division.
+             We don't want its object creation. Let's see how to do it.</p>
+        <p>
+            <span class="blue italics">Operation.cpp</span>
+           <script src="https://gist.github.com/BimalRajGyawali/518325c9756b4849109ea12e80b4a779.js"></script>
+        </p>
+            <p>Creating the object of Operation.cpp class will throw you an error,
+              unless you take the help of friend class or another public member function. You can try it.</p>
+        
+            <p>We invoke these methods by the name of the class, without creating objects as:</p>
+           <p>
+            <span class="blue italics">main.cpp</span>
+           <script src="https://gist.github.com/BimalRajGyawali/42942ade8a8c5eb1c5665cfe4727fb41.js"></script>
+         </p>
+              <p>This way, we have discussed the why, when and how to use constructors in object oriented programming
+              language taking the reference of C++.</p>
+        
+
+                </section>
+           
+         <section class="postcard-section">
+            <p class="info">More From This Blog</p>
+            <div class="border"></div>
+            <div class="postcards-container clearfix">
+
+               <!-- creates postcard -->
+               <div class="postcard-wrapper" onclick="direct('../oop/constructors-in-c++.html')">
+                <div class="post-image oop-post-image">OOP</div>
+                <div class="post-desc oop-post-desc">
+                   <h2>Constructors in C++</h2>
+                   <p class="dimmed">Posted on: <span>July 9, 2019</span></p>
+                   <p>Constructors are the special type of member functions
+                   that have same name as that of the class. So, if constructors are <span class="dimmed">Read more....</span></p>
+               </div>
+            </div>
+              <!-- creates postcard -->
+              <div class="postcard-wrapper" onclick="direct('../java/mail-sender-in-java.html')">
+                <div class="post-image java-post-image">Java</div>
+                <div class="post-desc java-post-desc">
+                   <h2>Mail Sender in Java</h2>
+                   <p class="dimmed">Posted on: <span>October 16, 2019</span></p>
+                   <p>Java provides Mailer APIs for sending and receiving emails via Java Application
+                    using any mail servers. In this blog post  <span class="dimmed">Read more....</span></p>
+               </div>
+            </div>
+                                 <!-- creates postcard -->
+             <div class="postcard-wrapper" onclick="direct('../posts/java/apis-application-programming-interface.html')">
+              <div class="post-image java-post-image">Java</div>
+              <div class="post-desc java-post-desc">
+                 <h2>API : An Intoduction</h2>
+                 <p class="dimmed">Posted on: <span>August 14, 2019</span></p>
+                 <p> API is a regular term used widely in field of web development.
+                   But many people don't have any  , or have a vague idea about APIs <span class="dimmed">Read more....</span></p>
+             </div>
+          </div>
+ 
+               <!-- creates postcard -->
+               <div class="postcard-wrapper" onclick="direct('../java/how-to-build-rest-api-using-spring-boot.html')">
+                   <div class="post-image java-post-image">Java</div>
+                   <div class="post-desc java-post-desc">
+                      <h2>Rest API With Spring Boot</h2>
+                      <p class="dimmed">Posted on: <span>August 24, 2019</span></p>
+                      <p> REST, stands for Representational State Transfer, which is an 
+                       architectural style to develop APIs.  REST API is an <span class="dimmed">Read more....</span></p>
+                  </div>
+               </div>
+                  
+              <!-- creates postcard -->
+           <div class="postcard-wrapper" onclick = "direct('../git/get-started-with-git.html')">
+             <div class="post-image git-post-image">Git</div>
+             <div class="post-desc git-post-desc">
+                <h2>Git : Get Started With</h2>
+                <p class="dimmed">Posted on: <span>September 18, 2019</span></p>
+                <p>GIT has been established as a popular and a must-know tool
+               for developers in recent time. Basically, Git is a  <span class="dimmed">Read more....</span></p>
+            </div>
+         </div>
+              <!-- creates postcard -->
+              <div class="postcard-wrapper" onclick="direct('../java/java-best-practices.html')">
+               <div class="post-image java-post-image">Java</div>
+               <div class="post-desc java-post-desc">
+                  <h2>Java Best Practices</h2>
+                  <p class="dimmed">Posted on: <span>July 7, 2019</span></p>
+                  <p>  Programming is not just about writing code. It is about writing Clean, Maintainable, Non-Fragile Code
+                    and  <span class="dimmed">Read more....</span></p>
+              </div>
+           </div>
+           
+         </div>
+         </section>
+         
+         <div class="border border-footer"></div>
+        
+        
+    </main>
+    <footer>
+        <div class="icons">
+          <ul class="icon-list clearfix">
+              <li class="icon"><a  href=""><img src="../../img/fb.png" alt="facebook icon"></a></li>
+              <li class="icon"><a  href=""><img src="../../img/linkedin.png" alt="linkedin icon"></a></li>
+              <li class="icon"><a href=""><img src="../../img/github.png" alt="github icon"></a>
+              </li>
+            </ul>
+        </div>
+        <p class="center dimmed copyright">&copy; The Programming Bot 2020</p>
+        
+    </footer>
+
+    <script src="../../js/header.js"></script>
+    <script src="../../js/direct.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/postcard.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="icon" href="../../img/logo.png">
+    <title>The Programming Bot</title>
+</head>
+<body>
+    <header class="header clearfix">
+        <div class="logo-bar clearfix">
+            <h1 class="logo"><a href="../../index.html">The Programming Bot </a></h1>
+            <div class="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="nav-bar hide " id="nav">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../post-group/java-posts.html">Java</a></li>
+                <li><a href="../../post-group/js-posts.html">JS</a></li>
+                <li><a href="../../post-group/git-posts.html">Git</a></li>               
+                <li><a href="../../post-group/oop-posts.html">OOP</a></li>               
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="post-container">
+                 <h2>GIT : Get Started With </h2>
+                 <span class="dimmed date">October 28,2020</span>
+                 <img class="image" src="../../img/git.png" alt="git">
+                 <p>GIT has been established as a popular and a must-know tool for developers in recent time. Basically, Git is a distributed version control system which helps the developers to co-ordinate
+                    and maintain the history of every version of the project they are working on.</p> <p>
+                    Git is open-source and developed by Linus Torvalds, the creator of Linux Kernel.</p>
+        
+                    <p>
+                    This blog-post will be a step by step guideline to get started with git.</p>
+        
+                  
+                    <ul class="list">
+                        <li>Step-1 : Installation</li>
+                        <li>Step-2 : One Time Configuration</li>
+                        <li>Step-3 : Create Local Repository</li>
+                        <li>Step-4 : Add to Staging Area</li>
+                        <li>Step-5 : Commit</li>
+                    </ul>
+        
+                    <h2 class="section-heading">1. Installation</h2>
+                    <p>
+                    You need to have Git installed in your local machine.
+                    Installation is simple and quite straight-forward.
+                    Follow <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">this</a>
+                    and install git on your machine.</p>
+        
+        
+                    <h2 class="section-heading">2. One Time Configuration</h2>
+        
+                    <p>Once Git is installed. We have to set some global values.
+                    We are going to set username and email for now.</p>
+
+                    <p><script src="https://gist.github.com/BimalRajGyawali/1d5b850bb7d4502a0cf9ee1f992a837e.js"></script>
+                    </p>
+                    <h2 class="section-heading">3. Create Local Repository</h2>
+        
+                    <p>Repository is the working place with directories and 
+                    files that are being maintained by Git.
+                    Repository can be <span class="blue">Local</span>, 
+                    one that resides on your local computer, or
+                    <span class="blue"> Remote</span>, one that resides on server ( repository created in
+                    <span class="blue">Github</span> is remote one).</p>
+        
+        
+                  <p>To create the local repository, <span class="blue">cd</span>
+                    to the directory which you want to be tracked by git and then run following command.</p>
+                  <p><script src="https://gist.github.com/BimalRajGyawali/49961f2f2a5cced78b43c37c9f4d2687.js"></script></p>
+        
+                  <p>With <span class="blue">git status </span>you can view whether the files are tracked or not.
+        
+                  Files with <span class="red">red</span> color are the untracked one.</p>
+        
+                  <h2 class="section-heading">3. Add to Staging Area</h2>
+        
+                  <p>
+                  So, up to now, you have git in your machine and untracked files in your repository.
+                  This is the important part as we are going to make Git track our files.</p>
+        
+        
+                   <!---image -->
+                   <a href="../../img/staging_area.png">
+                     <img class="image" src="../../img/staging_area.png" alt="staging area">
+                   </a>        
+        
+                    <p>
+                      It is important to understand that Git only considers those files to be tracked which are in the Staging Area, not all the modified files in the repository.
+                      So, we should add the files first to the Staging Area before commit.</p>
+        
+                      <p>The files and directories added to the Staging Area appears
+                      <span class="green">green</span>
+                      and are ready for the commit.</p>
+        
+                      <p>
+                      <script src="https://gist.github.com/BimalRajGyawali/1d47930bff9ad74ea6b7cb94eb183784.js"></script>
+                      </p>
+        
+                      <h2 class="section-heading">4. Commit</h2>
+                    <p>
+                    The last step is to commit the changes made. Then the changes would be kept tracked by Git.</p>
+        
+                    <p>
+                    <script src="https://gist.github.com/BimalRajGyawali/7d79a83312ab3a51db4684c2c019f56c.js"></script></p>
+        
+                    <p>Your local repository is all set well.
+                      Now, you can just modify the files, add it to the staging area and commit the changes.</p>
+        
+          </section>
+           
+         <section class="postcard-section">
+            <p class="info">More From This Blog</p>
+            <div class="border"></div>
+            <div class="postcards-container clearfix">
+              <!-- creates postcard -->
+              <div class="postcard-wrapper" onclick="direct('../java/mail-sender-in-java.html')">
+               <div class="post-image java-post-image">Java</div>
+               <div class="post-desc java-post-desc">
+                  <h2>Mail Sender in Java</h2>
+                  <p class="dimmed">Posted on: <span>October 16, 2019</span></p>
+                  <p>Java provides Mailer APIs for sending and receiving emails via Java Application
+                   using any mail servers. In this blog post  <span class="dimmed">Read more....</span></p>
+              </div>
+           </div>
+              <!-- creates postcard -->
+              <div class="postcard-wrapper" onclick="direct('../oop/why-constructors-in-c++.html')">
+               <div class="post-image oop-post-image">OOP</div>
+               <div class="post-desc oop-post-desc">
+                  <h2>Why Constructors in C++ </h2>
+                  <p class="dimmed">Posted on: <span>July 14, 2019</span></p>
+                  <p> Have you ever wondered, why constructors are so important in object oriented languages ?
+                      Do you, actually know when  <span class="dimmed">Read more....</span></p>
+              </div>
+           </div>
+
+              <!-- creates postcard -->
+              <div class="postcard-wrapper" onclick="direct('../java/how-to-build-rest-api-using-spring-boot.html')">
+                  <div class="post-image java-post-image">Java</div>
+                  <div class="post-desc java-post-desc">
+                     <h2>Rest API With Spring Boot</h2>
+                     <p class="dimmed">Posted on: <span>August 24, 2019</span></p>
+                     <p> REST, stands for Representational State Transfer, which is an 
+                      architectural style to develop APIs.  REST API is an <span class="dimmed">Read more....</span></p>
+                 </div>
+              </div>
+                 
+                 <!-- creates postcard -->
+           <div class="postcard-wrapper" onclick="direct('../java/apis-application-programming-interface.html')">
+              <div class="post-image java-post-image">Java</div>
+              <div class="post-desc java-post-desc">
+                 <h2>API : An Intoduction</h2>
+                 <p class="dimmed">Posted on: <span>August 14, 2019</span></p>
+                 <p> API is a regular term used widely in field of web development.
+                   But many people don't have any  , or have a vague idea about APIs <span class="dimmed">Read more....</span></p>
+             </div>
+          </div>
+             <!-- creates postcard -->
+             <div class="postcard-wrapper" onclick="direct('../java/java-best-practices.html')">
+              <div class="post-image java-post-image">Java</div>
+              <div class="post-desc java-post-desc">
+                 <h2>Java Best Practices</h2>
+                 <p class="dimmed">Posted on: <span>July 7, 2019</span></p>
+                 <p>  Programming is not just about writing code. It is about writing Clean, Maintainable, Non-Fragile Code
+                   and  <span class="dimmed">Read more....</span></p>
+             </div>
+          </div>
+          
+              <!-- creates postcard -->
+              <div class="postcard-wrapper" onclick="direct('../oop/constructors-in-c++.html')">
+                 <div class="post-image oop-post-image">OOP</div>
+                 <div class="post-desc oop-post-desc">
+                    <h2>Constructors in C++</h2>
+                    <p class="dimmed">Posted on: <span>July 9, 2019</span></p>
+                    <p>Constructors are the special type of member functions
+                    that have same name as that of the class. So, if constructors are <span class="dimmed">Read more....</span></p>
+                </div>
+             </div>
+
+           </div>
+         </section>
+
+         
+    </main>
+    <footer>
+      <div class="border border-footer"></div>
+      <div class="icons">
+        <ul class="icon-list clearfix">
+            <li class="icon"><a  href="https://www.facebook.com/profile.php?id=100013890977140"><img src="../../img/fb.png" alt="facebook icon"></a></li>
+            <li class="icon"><a  href="https://www.linkedin.com/in/bimal-raj-gyawali-238a50117/"><img src="../../img/linkedin.png" alt="linkedin icon"></a></li>
+            <li class="icon"><a href="https://github.com/BimalRajGyawali"><img src="../../img/github.png" alt="github icon"></a> </li>
+          </ul>
+      </div>
+      <p class="center dimmed copyright">&copy; The Programming Bot 2020</p>
+      
+  </footer>
+  <script src="../../js/header.js"></script>
+  <script src="../../js/direct.js"></script>
+
+    
+</body>
+</html>

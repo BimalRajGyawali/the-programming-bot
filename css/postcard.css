@@ -12,8 +12,8 @@
     opacity: 0.3;
     
 }
-.postcard-wrapper:hover{
-  
+.postcard-wrapper:hover .post-image{
+   color : red;
 }
 
 .postcard-wrapper{
@@ -23,7 +23,7 @@
     cursor: pointer;
     margin-top: 30px;
     margin-bottom: 30px;
-    overflow: hidden;
+   
 
   
   }
@@ -40,6 +40,7 @@
   }
   .js-post-image{
     background:#4B3621;
+    
   }
   .java-post-image{
    background:#3B3C36;
@@ -47,7 +48,7 @@
   .git-post-image{
     background: #343434;
   }
-  .cpp-post-image{
+  .oop-post-image{
       background: #253529;
   }
   .post-desc{
@@ -65,7 +66,7 @@
   .git-post-desc{
       background: #dcd0ba;
   }
-  .cpp-post-desc{
+  .oop-post-desc{
     background: #b5e2ff;
 
   }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/header.css">
@@ -34,70 +35,60 @@
     </header>
     <main class="main-container">
         <section class="post-container">
-                 <h2>Rest API : How to Build with Spring Boot</h2>
-                 <span class="dimmed date">August 24,2020</span>
-                 <img class="image" src="../../img/boot.png" alt="picture">
-                 <p>REST, stands for Representational State Transfer, which is an architectural style to develop APIs.
-                    REST API is an application program interface that exchanges JSON (or any other documents).
-                    It uses HTTP requests to GET, POST, PUT and DELETE data.</p>
-        
-                  <p>This blog post will be a guide to develop 'RESTful web service' or 'REST APIs' using Spring Boot,
-                    Hibernate, JPA and MYSQL.</p>
-        
-                <p>We will divide this task into following steps :</p>
-        
-                    <ul class="list">
-                      <li>1. Create Spring Boot Project</li>
-                      <li>2. Configure Database</li>
-                      <li>3. Create Model</li>
-                      <li>4. Create JPA Repository Layer</li>
-                      <li>5. Create Rest Controller</li>
-                      <li>6. Run The Project</li>
-                    </ul>
-        
-              <h2 class="section-heading">1. Create Spring Boot Project</h2>
-               <p>Open SpringSTS and create a new Spring Starter Project with JPA, JDBC,
-                  Hibernate, Web and Rest Dependencies, or you can download a project from
-                  <a href="https://start.spring.io/">start.spring.io</a>.</p>
-        
-        
-                <h2 class="section-heading">2. Configure Database</h2>
-            <p>Create a database named 'restdb' in MYSQL. Then configure database properties in
-              <span class="blue">application.properties</span>.</p>
-        
-           <p>
-            <script src="https://gist.github.com/BimalRajGyawali/18a8e65523f79aadc00deae56d9a3f07.js"></script>
-        
-           </p>
-        
-               <h2 class="section-heading">3. Create Model</h2> <br/>
-        
-        <p>     <script src="https://gist.github.com/BimalRajGyawali/1feaa7f8f59077c490e480f86850737c.js"></script>
-        </p>
-        
-         <h2 class="section-heading">4. Create JPA Repository Layer</h2><br/>
-        
-        <p> <script src="https://gist.github.com/BimalRajGyawali/73407f4494fa6d314279a31348ed588b.js"></script>
-        </p>
-         <h2 class="section-heading">5. Create Rest Controller</h2><br/>
-        
-       <p>  <script src="https://gist.github.com/BimalRajGyawali/090c8de439d0e57d34cf7b5125ecf964.js"></script>
-       </p> 
-          <h2 class="section-heading">6. Run The Project</h2>
-       <p> 
-        <script src="https://gist.github.com/BimalRajGyawali/76e29676b12b12a914b19a7f2aea9744.js"></script>
-    </p> 
-        
-          <p>Finally, run the project as Spring Boot App. The project will
-            run at <span class="blue">http://localhost:8080</span>.</p>
-        
-         </section>
+                 <h2>Mail Sender in Java</h2>
+                 <span class="dimmed date">October 28,2020</span>
+                 <img class="image" src="../../img/mail.jpg" alt="picture">
+                 <p>Java provides Mailer APIs for sending and receiving emails via Java Application
+                  using any mail servers. In this post, we will use Gmail server.Once you create a
+                  new Spring Boot project with java mail dependencies, you are good to go. </p>
+      
+                     <h2 class="section-heading">The User Interface </h2>
+                     <p> We create a form to collect recepient mail address, mail subject and message to be sent. </p>
+      
+                     <p><span class="blue">mailform.jsp</span></p>
+      
+                    <p> <script src="https://gist.github.com/BimalRajGyawali/e941af9a47b794b38a637cd09d96954c.js"></script>
+                    </p>
+                     <p>External CSS is given through file mailformstyle.css</p>
+      
+                    <p> <span class="blue">mailformstyle.css</span></p>
+                    <p> <script src="https://gist.github.com/BimalRajGyawali/8b58ea601555918b134f5bbda3056dc3.js"></script>
+                    </p>
+      
+                    <h2 class="section-heading">The Real Part </h2>
+      
+                    <p>Till now we have created a non-functional form. The main task is to make it functional.</p>
+      
+                   <p> <span class="blue title">Mailer.java</span></p>
+      
+                   <p> <script src="https://gist.github.com/BimalRajGyawali/6c8d685cdc95d5a4d7286c1a4f1c5bd0.js"></script>
+                   </p>
+                    <p>Up to now, we have a form with recepient email address, subject and message body in the
+                      front end, and a Mailer class with a method to send email if its parameters are provided.
+      
+                    We should now collect the parameters from the form(frontend) and give them to
+                    Mailer.java(backend) so that it can send email to the recepient.
+                    </p>
+      
+                    <p>But, how to do this? Simply, by using a Controller. Controller is a java class with methods
+                    to process requests and generate responses. We can understand Controller as a linker between
+                    form(frontend) and Mailer.java(backend)</p>
+      
+            <p><span class="blue title ">MailController.java</span></p>
+            <p><script src="https://gist.github.com/BimalRajGyawali/4c157d7972e8b784064dfc7d2e089f49.js"></script>
+            </p>
+      
+              <h2 class="section-heading">Run The Project </h2>
+      
+              <p>Finally, run the project as Spring Boot App. The project will
+                run at <span class="blue">http://localhost:8080</span>.</p>
+          </section>
            
          <section class="postcard-section">
             <p class="info">More From This Blog</p>
             <div class="border"></div>
             <div class="postcards-container clearfix">
-                   <!-- creates postcard -->
+                        <!-- creates postcard -->
            <div class="postcard-wrapper" onclick="direct('../java/apis-application-programming-interface.html')">
             <div class="post-image java-post-image">Java</div>
             <div class="post-desc java-post-desc">
@@ -107,8 +98,16 @@
                  But many people don't have any  , or have a vague idea about APIs <span class="dimmed">Read more....</span></p>
            </div>
         </div>
-    
-        
+             <!-- creates postcard -->
+             <div class="postcard-wrapper" onclick="direct('../java/how-to-build-rest-api-using-spring-boot.html')">
+              <div class="post-image java-post-image">Java</div>
+              <div class="post-desc java-post-desc">
+                 <h2>Rest API With Spring Boot</h2>
+                 <p class="dimmed">Posted on: <span>August 24, 2019</span></p>
+                 <p> REST, stands for Representational State Transfer, which is an 
+                  architectural style to develop APIs.  REST API is an <span class="dimmed">Read more....</span></p>
+             </div>
+          </div>
            <!-- creates postcard -->
            <div class="postcard-wrapper" onclick = "direct('../git/get-started-with-git.html')">
             <div class="post-image git-post-image">Git</div>
@@ -130,16 +129,17 @@
                   that have same name as that of the class. So, if constructors are <span class="dimmed">Read more....</span></p>
               </div>
            </div>
-            <!-- creates postcard -->
-            <div class="postcard-wrapper" onclick="direct('../java/mail-sender-in-java.html')">
-               <div class="post-image java-post-image">Java</div>
-               <div class="post-desc java-post-desc">
-                  <h2>Mail Sender in Java</h2>
-                  <p class="dimmed">Posted on: <span>October 16, 2019</span></p>
-                  <p>Java provides Mailer APIs for sending and receiving emails via Java Application
-                   using any mail servers. In this blog post  <span class="dimmed">Read more....</span></p>
-              </div>
-           </div>
+        
+                  <!-- creates postcard -->
+                  <div class="postcard-wrapper" onclick="direct('../java/java-best-practices.html')">
+                     <div class="post-image java-post-image">Java</div>
+                     <div class="post-desc java-post-desc">
+                        <h2>Java Best Practices</h2>
+                        <p class="dimmed">Posted on: <span>July 7, 2019</span></p>
+                        <p>  Programming is not just about writing code. It is about writing Clean, Maintainable, Non-Fragile Code
+                          and  <span class="dimmed">Read more....</span></p>
+                    </div>
+                 </div>
               <!-- creates postcard -->
               <div class="postcard-wrapper" onclick="direct('../oop/why-constructors-in-c++.html')">
                <div class="post-image oop-post-image">OOP</div>
@@ -150,7 +150,6 @@
                       Do you, actually know when  <span class="dimmed">Read more....</span></p>
               </div>
            </div>
-
          </div>
          </section>
 
@@ -171,6 +170,7 @@
   </footer>
   <script src="../../js/header.js"></script>
   <script src="../../js/direct.js"></script>
+
 
     
 </body>

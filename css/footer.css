@@ -1,0 +1,56 @@
+.icons{
+    width:90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.icon{
+    
+    width: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: left;
+}
+
+.center{
+    text-align: center;
+}
+.border{
+    border-bottom: 1px solid #000;
+    width:98%;
+    margin:0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0.3;
+    
+}
+.border-footer{
+    opacity: 0.1;
+
+}
+
+.icon-list{
+    list-style: none;
+}
+.copyright{
+    margin-bottom: 40px;
+}
+@media only screen and (min-width:600px){
+   .icons{
+       width: 40%;
+       margin: 0 auto;
+       margin-top: 30px;
+       margin-bottom: 20px;
+
+   }
+}
+@media only screen and (min-width:769px){
+   .icons{
+       width: 30%;
+       margin: 0 auto;
+       margin-top: 60px;
+       margin-bottom: 30px;
+
+   }
+ 
+}

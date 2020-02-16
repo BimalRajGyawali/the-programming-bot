@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/postcard.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/java-best-practices.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="icon" href="../../img/logo.png">
+    <title>The Programming Bot</title>
+</head>
+<body>
+    <header class="header clearfix">
+        <div class="logo-bar clearfix">
+            <h1 class="logo"><a href="../../index.html">The Programming Bot </a></h1>
+            <div class="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="nav-bar hide " id="nav">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../post-group/java-posts.html">Java</a></li>
+                <li><a href="../../post-group/java-posts.html">JS</a></li>
+                <li><a href="../../post-group/git-posts.html">Git</a></li>               
+                <li><a href="../../post-group/oop-posts.html">OOP</a></li>               
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="post-container">
+                 <h2>Java Best Practices </h2>
+                 <span class="dimmed date">October 28,2020</span>
+                 <img class="image" src="../../img/best-practice.jpg" alt="picture">
+
+                 <p> Programming is not just about writing code. It is about writing Clean, Maintainable, Non-Fragile Code
+                    and much more. Since Java is a grammatically strong language, if we provide a little care we can write
+                    robust code instead of untidy and sluggish code.</p>
+      
+                <p> In this blog post , we will be dealing with the <span class="italics">do's</span> 
+                    and <span class="italics">don'ts</span> along with conventions
+                   and best practices in Java, in these <span class="italics">three</span> points .</p>
+      
+                <ul class="list">
+                <li>1. Use Naming Conventions</li>
+                <li>2. Introduce Parameter Object</li>
+                <li>3. Program to an Interface</li>
+                </ul>
+      
+                  <h2 class="section-heading">1. Use Naming Conventions</h2>
+      
+                   <p>Naming plays an important part in making a code readable.
+                      If named properly, we can distinguish <span class="italics">packages</span>,
+                      <span class="italics">classes,</span> <span class="italics">methods</span>,
+                       <span class="italics">variables</span> and<span class="italics">
+                      constants</span> just from their names.</p>
+      
+      
+                <h2 class="section-heading smaller">i) Packages :</h2>
+                 <p>Packages should be named in small letters. Company uses reversed Internet
+                   Domain name to begin their packages name.</p>
+      
+                 <p>examples:</p>
+      
+                
+                    <ul class="list rectangle">
+                        <li> com.example.mypackage</li>
+                        <li>com.mysql.jdbc</li>
+                        <li> org.companyname.projectname</li>
+                    </ul>
+                
+      
+      
+                  <h2 class="section-heading smaller">ii) Classes and Interfaces:</h2>
+      
+                   <p>Class names should be nouns and first letter of each internal
+                     word is capitalized. Interfaces are exactly named as classes.</p>
+      
+                    <p>examples:</p>
+      
+                     
+                         <ul class="list rectangle">
+                             <li>EmployeeService</li>
+                             <li>DriverManager</li>
+                             <li>Student</li>
+                         </ul>
+                     
+              
+      
+                  <h2 class="section-heading smaller">iii) Variables and Methods:</h2>
+      
+                <p>The variables and methods are named using all small letters.
+                  In case of multi-word variables and method names, first letter is
+                  made lowercase with first letter of each internal word capitalized.</p>
+      
+                <p>examples:</p>
+
+            
+                  <ul class="list rectangle">
+                      <li>double num</li>
+                       <li>double getSum()</li>
+                       <li>int productCost</li>
+                       <li>int getProductCost()</li>
+                    </ul>
+              
+
+
+                <h2 class="section-heading smaller">iv) Constants:</h2>
+                 <p>Constants are named in all uppercase letters with words
+                   separated by underscore("_"). 
+                   The <span class="bold">static final </span>variables are constants.</p>
+      
+                 <p>examples:</p>
+            
+                <ul class="list rectangle">
+                    <li>static final int EXIT_ON_CLOSE</li>
+                    <li>static final double MIN_WIDTH</li>
+                </ul>
+            
+
+              <h2 class="section-heading">2. Introduce Parameter Object</h2>
+      
+                <p>Data need to be transferred from one class to another in same or
+                  different packages.It is not good to carry related data in unrelated
+                  and distributed manner. Instead, data should be wrapped with respective
+                  object and object is carried afterwards.</p>
+      
+                 <p>example:</p>
+      
+               <p> <span class=" blue italics">User.java</span>
+                <script src="https://gist.github.com/BimalRajGyawali/5977d8647744901a860def4329ca7e24.js"></script><br />
+               </p>
+                 <p>We are going to carry the data member of User class to UserServiceImpl class which implements
+                   UserService interface and would save the user information.</p>
+      
+                 <p><span class="blue italics">UserServiceImpl.java</span>
+                    <script src="https://gist.github.com/BimalRajGyawali/59641b6208d4ca00f3e79cd07ece4b37.js"></script><br />
+                </p>
+                  <p>Instead of passing individual data member, it is convenient to pass User object.</p>
+      
+                   <p>
+                    <span class="blue italics">UserServiceImpl.java</span>
+                    <script src="https://gist.github.com/BimalRajGyawali/5ed63c62a8de9977b914a73442ab1832.js"></script><br />
+       
+                   </p>
+                  <p>Thus, it is much easier to read and write tests if you pass the whole object.
+                    Also, related data will not be distributed while being passed. Introducing
+                    Parameter Object is actually a recommended design pattern.</p>
+      
+      
+                <p><span class="red italics bold">BUT</span>, be careful while passing object as parameter.
+                  Any changes made in object inside the method will be reflected in the original object as an object
+                  is passed by copying the value of reference, in Java.</p>
+      
+                <h2 class="section-heading">3. Program to an Interface :</h2>
+      
+                <p>An interface is a completely "abstract class" with only related abstract methods.
+                  It is one of the ways to achieve abstraction. Implementation is the concrete class where the logic is written.
+                  Interface is the contract; it species that its implementer class should implement all the abstract methods.</p>
+      
+                <p><span class="italics">Always Program to an Interface, Not to Implementation.</span></p>
+      
+                <p>Here we have Bank interface, which is implemented by NabilBank and PrabhuBank.
+                  The implementing banks will give their own implementation to the abstract methods of interface Bank.</p>
+      
+                <p><span class="blue italics">Bank.java</span>
+                    <script src="https://gist.github.com/BimalRajGyawali/63a45b75c559d448c58ecb543c769e19.js"></script><br/>
+          </p>
+                
+               <p>
+                <span class="blue italics">NabilBank.java</span>
+                <script src="https://gist.github.com/BimalRajGyawali/19040381ddeed90fc195d4cf82a0c760.js"></script> <br />
+      
+               </p>
+               
+               <p> <span class="blue italics">PrabhuBank.java</span>
+                <script src="https://gist.github.com/BimalRajGyawali/ba43810556644ff9016c87defdf92896.js"></script><br />
+              </p>
+
+              <p>  <span class="blue italics">RunBank.java</span>
+                <script src="https://gist.github.com/BimalRajGyawali/06cd1a167b99b8b3c1e4d9060fecfc20.js"></script><br />
+          </p>
+                <p>Programming to an interface provides flexibility. In case, we need to add additional functionality
+                  to banks we can simply add it to the interface and make the banks to implement it.
+                  Furthermore, interfaces also provides the feature of dynamic binding of object, which increases
+                  the code reusability and flexibity.</p>
+      
+                <p>Here, in the RunBank.java , instead of having two different methods for displaying information
+                  about NabilBank and PrabhuBank , we have one method which binds to either of the classes depending
+                  on whose object is passed in the runtime.</p>
+      
+                 
+          </section>
+           
+         <section class="postcard-section">
+            <p class="info">More From This Blog</p>
+            <div class="border"></div>
+            <div class="postcards-container clearfix">
+           
+                     <!-- creates postcard -->
+           <div class="postcard-wrapper" onclick="direct('../java/apis-application-programming-interface.html')">
+            <div class="post-image java-post-image">Java</div>
+            <div class="post-desc java-post-desc">
+               <h2>API : An Intoduction</h2>
+               <p class="dimmed">Posted on: <span>August 14, 2019</span></p>
+               <p> API is a regular term used widely in field of web development.
+                 But many people don't have any  , or have a vague idea about APIs <span class="dimmed">Read more....</span></p>
+           </div>
+        </div>
+             <!-- creates postcard -->
+             <div class="postcard-wrapper" onclick="direct('../java/how-to-build-rest-api-using-spring-boot.html')">
+              <div class="post-image java-post-image">Java</div>
+              <div class="post-desc java-post-desc">
+                 <h2>Rest API With Spring Boot</h2>
+                 <p class="dimmed">Posted on: <span>August 24, 2019</span></p>
+                 <p> REST, stands for Representational State Transfer, which is an 
+                  architectural style to develop APIs.  REST API is an <span class="dimmed">Read more....</span></p>
+             </div>
+          </div>
+           <!-- creates postcard -->
+           <div class="postcard-wrapper" onclick = "direct('../git/get-started-with-git.html')">
+            <div class="post-image git-post-image">Git</div>
+            <div class="post-desc git-post-desc">
+               <h2>Git : Get Started With</h2>
+               <p class="dimmed">Posted on: <span>September 18, 2019</span></p>
+               <p>GIT has been established as a popular and a must-know tool
+              for developers in recent time. Basically, Git is a  <span class="dimmed">Read more....</span></p>
+           </div>
+        </div>
+        
+            <!-- creates postcard -->
+            <div class="postcard-wrapper" onclick="direct('../oop/constructors-in-c++.html')">
+               <div class="post-image oop-post-image">OOP</div>
+               <div class="post-desc oop-post-desc">
+                  <h2>Constructors in C++</h2>
+                  <p class="dimmed">Posted on: <span>July 9, 2019</span></p>
+                  <p>Constructors are the special type of member functions
+                  that have same name as that of the class. So, if constructors are <span class="dimmed">Read more....</span></p>
+              </div>
+           </div>
+            <!-- creates postcard -->
+            <div class="postcard-wrapper" onclick="direct('../java/mail-sender-in-java.html')">
+               <div class="post-image java-post-image">Java</div>
+               <div class="post-desc java-post-desc">
+                  <h2>Mail Sender in Java</h2>
+                  <p class="dimmed">Posted on: <span>October 16, 2019</span></p>
+                  <p>Java provides Mailer APIs for sending and receiving emails via Java Application
+                   using any mail servers. In this blog post  <span class="dimmed">Read more....</span></p>
+              </div>
+           </div>
+              <!-- creates postcard -->
+              <div class="postcard-wrapper" onclick="direct('../oop/why-constructors-in-c++.html')">
+               <div class="post-image oop-post-image">OOP</div>
+               <div class="post-desc oop-post-desc">
+                  <h2>Why Constructors in C++ </h2>
+                  <p class="dimmed">Posted on: <span>July 14, 2019</span></p>
+                  <p> Have you ever wondered, why constructors are so important in object oriented languages ?
+                      Do you, actually know when  <span class="dimmed">Read more....</span></p>
+              </div>
+           </div>
+         </div>
+         </section>
+
+         
+    </main>
+    <footer>
+      <div class="border border-footer"></div>
+      <div class="icons">
+        <ul class="icon-list clearfix">
+            <li class="icon"><a  href="https://www.facebook.com/profile.php?id=100013890977140"><img src="../../img/fb.png" alt="facebook icon"></a></li>
+            <li class="icon"><a  href="https://www.linkedin.com/in/bimal-raj-gyawali-238a50117/"><img src="../../img/linkedin.png" alt="linkedin icon"></a></li>
+            <li class="icon"><a href="https://github.com/BimalRajGyawali"><img src="../../img/github.png" alt="github icon"></a> </li>
+          </ul>
+      </div>
+      <p class="center dimmed copyright">&copy; The Programming Bot 2020</p>
+      
+  </footer>
+  <script src="../../js/header.js"></script>
+  <script src="../../js/direct.js"></script>
+
+
+    
+</body>
+</html>
