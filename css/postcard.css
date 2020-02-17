@@ -42,8 +42,8 @@
   }
   .postcard-wrapper h2{
     font-family: 'Open Sans', sans-serif;
-      letter-spacing: 0.03em;
-      font-size: 2em;
+    letter-spacing: 0.03em;
+   
     
       
   }
@@ -68,7 +68,9 @@
           width: 50%;
           
       }
-     
+       .postcard-wrapper h2{
+        font-size: 2em;
+       }
    
   }
   /*For extra large desktops*/
@@ -76,5 +78,8 @@
       .postcard-wrapper{
           width: 40%;
       } 
+      .postcard-wrapper p{
+        font-size: 1.3em;
+      }
   }
   

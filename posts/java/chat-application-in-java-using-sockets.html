@@ -49,7 +49,7 @@
     </header>
     <main class="main-container">
         <section class="post-container">
-                 <h2>GUI Chat Application in Java using Sockets</h2>
+                 <h2>GUI Chat Application in Java using Sockets : The First Part</h2>
                  <span class="dimmed date">February 16,2020</span>
                  <img class="image" src="../../img/chat-app.jpg" alt="picture">
                  
@@ -101,6 +101,12 @@
                 Up to now, we got our server running which accept the clients' requests and
                 send them the message "Hello Client".
             </p>
+            <p>
+                But, there is a little problem here. The problem is that the <span class="italics">Server</span> class
+                is assigned with two responsibilites, first is handling clients and second is starting 
+                the problem as it has main method. This, kind of, violates <span class="bold">S</span>OLID
+                principle. So, we need to refactor this class. We will do it in subsequent post.
+            </p>
 
 
 
@@ -111,7 +117,17 @@
             <p class="info">More From This Blog</p>
             <div class="border"></div>
           </div>
-            <div class="postcards-container clearfix">
+            <div class="postcards-container ">
+                         <!-- creates postcard -->
+          <div class="postcard-wrapper" onclick="direct('../java/chat-app-in-java-creating-server.html')">
+            
+            <h2>GUI Chat Application in Java using Sockets : Refactoring Server</h2>
+            <p class="dimmed">Posted on: <span>February 17,2020</span></p>
+            <p>  This is the second installment in the series of building a GUI
+              chat application in java using sockets. We    <span class="dimmed">Read more....</span></p>
+             <div class="border"></div>
+     </div>
+                
                <!-- creates postcard -->
                <div class="postcard-wrapper" onclick="direct('../java/mail-sender-in-java.html')">
                 
