@@ -1,7 +1,7 @@
 .post-container h2{
     margin-top: 20px;
     padding:20px 0 14px 0px;
-    font-size: 2em;
+    
     font-family: 'Lora';
     letter-spacing: 0.03em;
     word-spacing: 0.05em;
@@ -13,14 +13,14 @@
 .post-container p{
     padding:15px 15px 15px 0;
     line-height: 1.5em;
-    font-size:1.3em;
+   
 
 }
 
 .list{
     list-style: none;
     line-height: 2em;
-    font-size:1.3em;
+   
 }
 
 .section-heading{
@@ -90,9 +90,14 @@
         margin-top: 5px;
         
  }
- .post-container h1{
-     padding-top: 30px;
+ .post-container p,.list{
+    font-size:1.3em;
  }
+ .post-container h2{
+    font-size: 2em;
+ }
+ 
+ 
 }
 
 
@@ -106,7 +111,5 @@
 
         
  }
- .post-container h1{
-     padding-top: 40px;
- }
+
 }

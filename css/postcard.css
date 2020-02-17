@@ -1,7 +1,7 @@
 .info{
     padding-top: 50px;
     font-weight: 600;
-    font-size: 1.2em;
+    
 }
 .border{
     border-bottom: 1px solid #000;
@@ -48,7 +48,7 @@
       
   }
   .postcard-wrapper p{
-    font-size: 1.3em;
+ 
     padding-bottom: 20px;
   }
   .color{
@@ -70,6 +70,12 @@
       }
        .postcard-wrapper h2{
         font-size: 2em;
+       }
+       .info{
+        font-size: 1.2em;
+       }
+       .postcard-wrapper p{
+        font-size: 1.3em;
        }
    
   }
