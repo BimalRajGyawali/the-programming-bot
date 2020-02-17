@@ -56,6 +56,16 @@
   }
   /*For tablets*/
   @media only screen and (min-width:600px){
+    .postcard-wrapper h2{
+        font-size: 1.6em;
+       }
+       .info{
+        font-size: 1.2em;
+       }
+       .postcard-wrapper p{
+        font-size: 1.3em;
+       }
+   
       .postcard-wrapper{
           width:60%;
          
@@ -68,16 +78,7 @@
           width: 50%;
           
       }
-       .postcard-wrapper h2{
-        font-size: 2em;
-       }
-       .info{
-        font-size: 1.2em;
-       }
-       .postcard-wrapper p{
-        font-size: 1.3em;
-       }
-   
+      
   }
   /*For extra large desktops*/
   @media only screen and (min-width:1400px){
